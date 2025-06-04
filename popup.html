@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    body {
+      width: 200px;
+      padding: 16px;
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+    
+    .capture-btn {
+      width: 100%;
+      padding: 12px;
+      background: #4285f4;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 14px;
+      cursor: pointer;
+      font-weight: 500;
+    }
+    
+    .capture-btn:hover {
+      background: #3367d6;
+    }
+    
+    .instructions {
+      font-size: 12px;
+      color: #666;
+      margin-top: 8px;
+      line-height: 1.3;
+    }
+  </style>
+</head>
+<body>
+  <button id="captureBtn" class="capture-btn">
+    📸 Capture & Lookup
+  </button>
+  <div class="instructions">
+    Click to start screen capture. Drag to select area, then it will be looked up automatically.
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
