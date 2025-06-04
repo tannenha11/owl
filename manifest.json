@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "Screen Lookup",
+  "version": "1.0",
+  "description": "Capture screen areas and look them up visually",
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "storage"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Screen Lookup"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["content.css"]
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["overlay.html"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
